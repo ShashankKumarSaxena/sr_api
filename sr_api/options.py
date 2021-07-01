@@ -1,4 +1,6 @@
-class Animal:
+from enum import Enum
+
+class Animal(Enum):
     cat = "cat"
     dog = "dog"
     panda = "panda"
@@ -13,13 +15,13 @@ class Animal:
     birb = "birb"
     raccoon = "raccoon"
 
-class Gif:
+class Gif(Enum):
     wink = "wink"
     pat = "pat"
     hug = "hug"
     facepalm = "face-palm"
 
-class Filter:
+class Filter(Enum):
     greyscale = "greyscale"
     invert = "invert"
     invertgreyscale = "invertgreyscale"
